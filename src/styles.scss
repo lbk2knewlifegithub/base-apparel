@@ -7,7 +7,8 @@
   }
   [type="text"],
   [type="email"] {
-    @apply w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+    @apply w-full border-red-800 py-3 pl-8 rounded-full shadow-sm text-fill-900;
+    @apply focus:border-red-900 focus:ring-0;
   }
 
   h1,
@@ -20,7 +21,8 @@
   }
 
   body {
-    @apply font-mono;
+    @apply font-mono text-fill-900;
+    @apply bg-gradient-to-br from-[#ffffff] to-[#fff5f5];
   }
 }
 
@@ -29,4 +31,7 @@ input.ng-invalid.ng-touched {
 }
 
 @layer components {
+  .gradient-primary {
+    @apply bg-gradient-to-br from-[#f8bfbf] to-[#ee8c8c];
+  }
 }

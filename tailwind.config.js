@@ -12,14 +12,15 @@ module.exports = {
         DEFAULT: "1.5rem",
         sm: "2rem",
         lg: "4rem",
-        xl: "0rem",
+        xl: "8rem",
       },
     },
     extend: {
-      "red-900": "hsl(0, 6%, 24%)",
-      "red-800": "hsl(0, 93%, 68%)",
-      "red-700": "hsl(0, 36%, 70%)",
-
+      colors: {
+        "red-900": "hsl(0, 93%, 68%)",
+        "red-800": "hsl(0, 36%, 70%)",
+        "fill-900": "hsl(0, 6%, 24%)",
+      },
       // create custom fonts here
       fontFamily: {
         mono: ["'Josefin Sans'", ...defaultTheme.fontFamily.mono],

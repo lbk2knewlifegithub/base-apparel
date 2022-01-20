@@ -1,0 +1,35 @@
+<form [formGroup]="form">
+  <div class="relative">
+    <input
+      class="placeholder-red-700"
+      formControlName="email"
+      placeholder="Email address"
+      type="email"
+    />
+
+    <!-- warning -->
+    <img
+      [hidden]="!hasError"
+      class="absolute right-12 top-1/2 -translate-y-1/2"
+      src="assets/images/icon-error.svg"
+      alt="Error"
+    />
+    <!-- end warning -->
+
+    <button
+      class="duration-500 gradient-primary rounded-full px-7 p-4 absolute right-0 shadow-xl translate-x-1/2 xl:px-9 hover:translate-x-[calc(50%+8px)]"
+      type="submit"
+    >
+      <img src="assets/images/icon-arrow.svg" alt="Arrow" />
+    </button>
+
+    <!-- error -->
+    <p
+      [hidden]="!hasError"
+      class="text-red-900 absolute -bottom-2 left-5 translate-y-full"
+    >
+      Please provide a valid email
+    </p>
+    <!-- end error -->
+  </div>
+</form>
