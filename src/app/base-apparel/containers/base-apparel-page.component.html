@@ -11,20 +11,25 @@
 
   <!-- hero -->
   <img
+  @fadeInOnEnter
     class="w-full max-h-[512px] xl:hidden"
     src="assets/images/hero-mobile.jpg"
     alt="Hero Mobile"
   />
+
   <img
+  @fadeInOnEnter
     class="hidden absolute right-0 h-full xl:block"
     src="assets/images/hero-desktop.jpg"
     alt="Hero Desktop"
   />
   <!-- end hero -->
 
-  <div class="container max-w-lg md:max-w-xl xl:max-w-none ">
+  <div @fadeInLeftOnEnter class="container max-w-lg md:max-w-xl xl:max-w-none">
     <!-- content -->
-    <div class="text-center mt-20 space-y-4 xl:text-left xl:mt-0 xl:min-w-[450px]">
+    <div
+      class="text-center mt-20 space-y-4 xl:text-left xl:mt-0 xl:min-w-[450px]"
+    >
       <h1 class="text-5xl tracking-[.9rem] md:text-6xl xl:leading-[4.1rem]">
         <span class="text-red-800 font-light">WE'RE</span>
         <br />

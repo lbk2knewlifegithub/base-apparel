@@ -12,6 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 - [Solution URL](https://github.com/lbk2knewlifegithub/base-apparel)
 - [Live Site URL](https://lbk2knewlifegithub.github.io/base-apparel/)
+- [angular-animations](https://filipows.github.io/angular-animations/)
 
 ### Built with
 
