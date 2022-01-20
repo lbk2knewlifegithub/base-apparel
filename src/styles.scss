@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+  }
+  [type="text"],
+  [type="email"] {
+    @apply w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+  }
+
+  body {
+    @apply font-mono;
+  }
+}
+
+input.ng-invalid.ng-touched {
+  @apply border-2 border-red-900;
+}
+
+@layer components {
+}
